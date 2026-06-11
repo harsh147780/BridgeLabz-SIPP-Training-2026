@@ -4,8 +4,8 @@ import java.util.*;
 
 public class WareHouseStore {
 
-    public static int[] rotateArray(int[] arr, int k) {
-        int n = arr.length;
+    public static int[] rotateArray(int[] arr, int k,int n) {
+
         k = k % n;
 
         int[] rotated = new int[n];
@@ -38,7 +38,7 @@ public class WareHouseStore {
         System.out.print("Enter number of items : ");
         int n = sc.nextInt();
 
-        System.out.println("Enter the quanties of items");
+        System.out.println("Enter the quantities of items");
         int items[] = new int[n];
         for(int i = 0; i < n; i++){
             items[i] = sc.nextInt();
@@ -73,9 +73,9 @@ public class WareHouseStore {
 
         //For Arrays Rotated
 
-        System.out.print("Enter the kth position of ratation : ");
+        System.out.print("Enter the kth position of rotation : ");
         int k = sc.nextInt();
-        int[] rotated = rotateArray(items, k);
+        int[] rotated = rotateArray(items, k,n);
 
         System.out.println("Rotated Array: " + Arrays.toString(rotated));
 
