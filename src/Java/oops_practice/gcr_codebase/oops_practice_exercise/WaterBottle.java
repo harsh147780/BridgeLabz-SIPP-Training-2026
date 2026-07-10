@@ -1,4 +1,4 @@
-package Java.oops_practice.gcr_codebase.oops_practice_exercise.scenerioBased;
+package Java.oops_practice.gcr_codebase.oops_practice_exercise;
 
 class WaterBottle {
     String ownerName;
